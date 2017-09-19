@@ -1,0 +1,25 @@
+
+.tabSwitcher {
+	padding: 1em 0;
+}
+
+.tabSwitcher .tabs a {
+	background: #CCC;
+	border: 1px solid #CCC;
+	border-bottom: none;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1em;
+	margin: 0 1px -1px 0;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+}
+
+.tabSwitcher .tabs .active {
+	background: #FFF;
+}
+
+.tabSwitcher .toSwitch {
+	border: 1px solid #CCC;
+	padding: 0.5em 1.5em;
+}
