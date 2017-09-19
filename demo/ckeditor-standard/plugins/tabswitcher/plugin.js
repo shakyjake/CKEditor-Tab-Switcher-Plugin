@@ -7,7 +7,7 @@ CKEDITOR.plugins.add('tabswitcher',{
 		
 		editor.ui.addButton('tabswitcher',{
 			label: 'Tab Switcher',
-			command: 'insertTabSwitcher',
+			command: 'inserttabswitcher',
 			toolbar: 'insert,100'
 		});
 		
@@ -17,7 +17,7 @@ CKEDITOR.plugins.add('tabswitcher',{
 		
 		editor.filter.allow('div(tabswitcher,tabs,toSwitch)[id]', 'tabswitcher', true);
 		
-		editor.addCommand('insertTabSwitcher', new CKEDITOR.dialogCommand('tabswitcherDialog', {
+		editor.addCommand('inserttabswitcher', new CKEDITOR.dialogCommand('tabswitcherDialog', {
 			requiredContent : 'div(tabswitcher,tabs,toSwitch)[id]'
 		}));
 		

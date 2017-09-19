@@ -22,13 +22,13 @@ CKEDITOR.dialog.add( 'tabswitcherDialog', function( editor ) {
 			
             var dialog = this;
 			
-			var TabSwitcher, TabHolder, DivHolder, Tab, Div, DivP, CurrentTab, NumberOfTabs, UID;
+			var tabswitcher, TabHolder, DivHolder, Tab, Div, DivP, CurrentTab, NumberOfTabs, UID;
 			
 			UID = Math.floor(Math.random() * 100000);
 			
-			TabSwitcher = editor.document.createElement('div');
-			TabSwitcher.setAttribute('id', 'tabswitcher_' + UID);
-			TabSwitcher.setAttribute('class', 'tabswitcher');
+			tabswitcher = editor.document.createElement('div');
+			tabswitcher.setAttribute('id', 'tabswitcher_' + UID);
+			tabswitcher.setAttribute('class', 'tabswitcher');
 			
 			TabHolder = editor.document.createElement('div');
 			TabHolder.setAttribute('class', 'tabs');
@@ -92,9 +92,9 @@ CKEDITOR.dialog.add( 'tabswitcherDialog', function( editor ) {
 				
 			}
 			
-			TabSwitcher.append(TabHolder);
-			TabSwitcher.append(DivHolder);
-            editor.insertElement(TabSwitcher);
+			tabswitcher.append(TabHolder);
+			tabswitcher.append(DivHolder);
+            editor.insertElement(tabswitcher);
         }
     };
 });
