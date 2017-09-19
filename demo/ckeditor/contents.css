@@ -1,0 +1,131 @@
+/*
+	Copyright notice removed since it no-longer applies.
+	I've removed everything the Frederico has written because everything the Frederico has written is terrible. Embarrassingly so.
+	 - You don't need comments saying "text size, font, etc." - This isn't "Baby's First CSS File".
+	 - Don't lead your font stack with "sans-serif". What the fuck is wrong with you?
+	 - Don't put the braces on a new line. This isn't C.
+	 - Declaring "background-color: #FFF" isn't "removing" it, as you so claim.
+	 - Declaring "border-style: solid; border-color: #ccc; border-width: 0;" is stupid. This is the same as "border: 0 none #CCC;". Or "border: 0;". Or nothing at all, since the element in question didn't have a border applied in the first place.
+	 - You don't need IE7 hacks when the rest of your software doesn't support IE7. 
+	 - Don't try to pretend that CKEditor supports definition lists by adding styles for them.
+	 - Alphabetise (to increase the efficiency of gzip (and readability/usability)).
+*/
+
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto);
+
+body {
+	background: #FFF;
+	color: #333;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+	margin: 0.75em;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	margin: 0 0 0 2em;
+}
+
+p, li {
+	padding: 0.45em 0;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	padding: 0;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2, .title {
+	font-size: 24px;
+}
+
+h3, .intro {
+	font-size: 18px;
+}
+
+h4, h5, h6 {
+	font-size: 16px;
+}
+
+a {
+	color: #0092CB;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+}
+
+iframe {
+	border: none;
+	box-shadow: 0 0.225em 0.45em rgba(0,0,0,0.2);
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th, td {
+	border: none;
+	padding: 0.45em 0.9em;
+	text-align: left;
+}
+
+th {
+	background: #0092CB;
+	color: #FFF;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+}
+
+td {
+	border: 1px solid #333;
+	color: #333;
+}
+
+.boxLink {
+	padding: 0;
+}
+
+.cke_panel_list .boxLink, .boxLink a {
+	background: #0092CB;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	padding: 0.45em 0.9em;
+	text-decoration: none;
+	width: auto;
+}
+
+.leftText {
+	text-align: left;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.rightText {
+	text-align: right;
+}

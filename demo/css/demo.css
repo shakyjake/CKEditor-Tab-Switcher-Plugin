@@ -52,6 +52,21 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.8em;
 }
 
+a {
+	color: #F09;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #F2A;
+	text-decoration: none;
+}
+
+a:active {
+	color: #D07;
+	text-decoration: none;
+}
+
 p {
 	padding: 0.45em 0;
 }
@@ -81,3 +96,39 @@ code:hover {
 	padding: 0.75em;
 	text-decoration: none;
 }
+
+#RenderTarget {
+	padding: 0.9em 1.8em;
+}
+
+
+.tabSwitcher {
+	padding: 1em 0;
+}
+
+.tabSwitcher .tabs a {
+	background: #F09;
+	border: 1px solid #F09;
+	border-bottom: none;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	line-height: 1.8em;
+	margin: 0 1px -1px 0;
+	padding: 0.225em 1.35em;
+	text-decoration: none;
+}
+
+.tabSwitcher .tabs .active {
+	background: #FFF;
+	color: #F09;
+}
+
+.tabSwitcher .toSwitch {
+	border: 1px solid #F09;
+	overflow: hidden;
+	padding: 0.5em 1.5em;
+}
+

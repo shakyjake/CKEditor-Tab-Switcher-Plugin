@@ -21,8 +21,12 @@
 					<form method="post" action="">
 					
 						<textarea name="CK" id="CK" rows="1" cols="1"></textarea>
+						
+						<button type="button" onClick="RenderOutput();">Render</button>
 					
 					</form>
+					
+					<div id="RenderTarget"></div>
 				
 				</div>
 			
@@ -30,11 +34,19 @@
 		
 		</main>
 		
-		<script type="text/javascript" src="demo/ckeditor-standard/ckeditor.js"></script>
+		<script type="text/javascript" src="demo/ckeditor/ckeditor.js"></script>
 		<script type="text/javascript" src="demo/js/tabSwitcher.js"></script>
 		<script type="text/javascript">
 		
 			CKEDITOR.replace('CK');
+			
+			function RenderOutput(){
+				var s, o;
+				s = CKEDITOR.instances.CK.getData();
+				o = document.getElementById('RenderTarget');
+				o.innerHTML = s;
+				CKTabSwitcher('tabSwitcher');
+			}
 		
 		</script>
 	
