@@ -9,7 +9,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
 	
 	config.magicline_tabuList = ['id'];/* I strongly recommend adding this. ~Jake */
-	config.extraPlugins = 'tabSwitcher';
+	config.extraPlugins = 'tabswitcher';
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
