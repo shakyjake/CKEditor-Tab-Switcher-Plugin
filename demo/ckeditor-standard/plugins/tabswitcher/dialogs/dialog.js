@@ -1,4 +1,4 @@
-CKEDITOR.dialog.add( 'tabSwitcherDialog', function( editor ) {
+CKEDITOR.dialog.add( 'tabswitcherDialog', function( editor ) {
     return {
         title: 'Tab Switcher',
         minWidth: 400,
@@ -27,8 +27,8 @@ CKEDITOR.dialog.add( 'tabSwitcherDialog', function( editor ) {
 			UID = Math.floor(Math.random() * 100000);
 			
 			TabSwitcher = editor.document.createElement('div');
-			TabSwitcher.setAttribute('id', 'tabSwitcher_' + UID);
-			TabSwitcher.setAttribute('class', 'tabSwitcher');
+			TabSwitcher.setAttribute('id', 'tabswitcher_' + UID);
+			TabSwitcher.setAttribute('class', 'tabswitcher');
 			
 			TabHolder = editor.document.createElement('div');
 			TabHolder.setAttribute('class', 'tabs');

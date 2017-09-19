@@ -1,11 +1,11 @@
 ﻿/*
 	Copyright (c) 2017-08-16 Jake Nicholson
 */
-CKEDITOR.plugins.add('tabSwitcher',{
+CKEDITOR.plugins.add('tabswitcher',{
     icons: 'tabswitcher',
     init: function(editor){
 		
-		editor.ui.addButton('tabSwitcher',{
+		editor.ui.addButton('tabswitcher',{
 			label: 'Tab Switcher',
 			command: 'insertTabSwitcher',
 			toolbar: 'insert,100'
@@ -15,13 +15,13 @@ CKEDITOR.plugins.add('tabSwitcher',{
 		
 		editor.addContentsCss(PluginPath + 'styles/tabswitcher.css');
 		
-		editor.filter.allow('div(tabSwitcher,tabs,toSwitch)[id]', 'tabSwitcher', true);
+		editor.filter.allow('div(tabswitcher,tabs,toSwitch)[id]', 'tabswitcher', true);
 		
-		editor.addCommand('insertTabSwitcher', new CKEDITOR.dialogCommand('tabSwitcherDialog', {
-			requiredContent : 'div(tabSwitcher,tabs,toSwitch)[id]'
+		editor.addCommand('insertTabSwitcher', new CKEDITOR.dialogCommand('tabswitcherDialog', {
+			requiredContent : 'div(tabswitcher,tabs,toSwitch)[id]'
 		}));
 		
-		CKEDITOR.dialog.add('tabSwitcherDialog', PluginPath + 'dialogs/dialog.js');
+		CKEDITOR.dialog.add('tabswitcherDialog', PluginPath + 'dialogs/dialog.js');
 		
 		editor.on('mode', function(event){/* switching mode removes event bindings (cheers CK), this also triggers binding on initialisation */
 			if(editor.mode.toLowerCase() === 'wysiwyg'){
@@ -45,7 +45,7 @@ CKEDITOR.plugins.add('tabSwitcher',{
 function GetTSIDs(editor){
 	var EditorData, IDs;
 	EditorData = editor.getData();/* Can't get elements by class name (cheers CK) so we need hacky nonsense */
-	IDs = EditorData.match(/tabSwitcher_[\d]{1,5}/);
+	IDs = EditorData.match(/tabswitcher_[\d]{1,5}/);
 	if(IDs === null){
 		IDs = [];
 	}
