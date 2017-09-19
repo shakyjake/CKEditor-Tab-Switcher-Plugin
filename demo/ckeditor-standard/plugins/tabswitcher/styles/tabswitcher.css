@@ -1,9 +1,9 @@
 
-.tabSwitcher {
+.tabswitcher {
 	padding: 1em 0;
 }
 
-.tabSwitcher .tabs a {
+.tabswitcher .tabs a {
 	background: #CCC;
 	border: 1px solid #CCC;
 	border-bottom: none;
@@ -15,11 +15,11 @@
 	text-decoration: none;
 }
 
-.tabSwitcher .tabs .active {
+.tabswitcher .tabs .active {
 	background: #FFF;
 }
 
-.tabSwitcher .toSwitch {
+.tabswitcher .toSwitch {
 	border: 1px solid #CCC;
 	padding: 0.5em 1.5em;
 }

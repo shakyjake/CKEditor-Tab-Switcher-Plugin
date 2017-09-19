@@ -10,6 +10,7 @@ CKEDITOR.editorConfig = function( config ) {
 	
 	config.magicline_tabuList = ['id'];/* I strongly recommend adding this. ~Jake */
 	config.extraPlugins = 'tabswitcher';
+	config.allowedContent = 'h1 h2 h3 h4 h5 h6 span strong em ol ul li hr blockquote table thead tbody tfoot tr th td; a[!href,target]; p(*); iframe[!src,width,height,allowtransparency,allowfullscreen]';/* Here, have an acf config */
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
